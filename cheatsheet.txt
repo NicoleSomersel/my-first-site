@@ -1,7 +1,12 @@
 command line stuff(which honestly im probably rarely going to use tbh)
-pwd - print current colder im in
+pwd - print current folder im in (used this in class to print what was in folder)
 mkdir (Filename) - creates new folder with that name (used this in class)
-ls/dir - lists content in the folder im in (I do use this on linux)
+ls/dir - lists content in the folder im in (I do use this on linux to list out what contents in the folder and did this in class)
+cd desktop - (really useful will probably use more often, in class used this to move back to my desktop) moves to my desktop folder
+clear - clears terminal (used this to clean slate my terminal)
+code . - opens folder you have open in VSCode (used this to open my project sometimes I want to work on it)
+cd ... - moves into a folder (used this to move into my in our new folder constantly)
+whoami - used to display current account ussing the current session. (this is basic terminal command that is usually first learned and I used it constantly in class and on my own to confirm that my commands and terminals are working as it should).
 
 
 Structure at start of every new html file
