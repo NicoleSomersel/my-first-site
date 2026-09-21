@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <meta charset ="UTF-8">
-    <meta name="viewport" content="width=device", inital-scale="1.0">
-    <title>Contact Me</title>
-</head>
+<div clasa="flex-main">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device", inital-scale="1.0">
+        <title>How to Contact Me</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</div>
+
+
 <body>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-    </nav>  
+    </nav> 
     <main>
+        <ol>
+        <!--Link for Email-->
+        <li>Want to chat more? Email me!: <a href="nsomersel@albany.edu"> School Email</a></li>
+        <!--External absolute link-->
+        <li>Check this out!: <a href="https://github.com/NicoleSomersel" target="_blank">My own Blog (Link is my github for now till i get it set up lol)</a></li>
+        </ol>
+        <!--Form! I might use this in my own personal site tbh as a guestbook of sorts. Maybe in future make it more forum like where questions that have been answered will show?-->
+    <div class="content">
         <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+            <fieldset>
+                <legend>Message board</legend>
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+                <p>
+                    <label for="reason">Reason for Contacting Me:</label>
+                    <select id="reason" name="reason">
+                        <option value="question">Questions</option>
+                        <option value="Tech Support">Tech Support</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other concerns</option>
+                    </select>
+                </p>
 
-        <label for="reason">Reason for Contacting:</label>
-        <select id="reason" name="reason">
-            <option value="question">Question</option>
-            <option value="Tech Support">Comment</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Other">Other</option>
-        </select>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </p>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-
-        <input type="text" id="name" name="name" required>
-
-        <button type="submit">Send</button>
+                <p>
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates"> Come Email me about future updates to this site</label>
+                </p>
+                <button type="submit">Send</button>
         </form>
     </main>
+    </div>
     <footer><p>&copy; 2026 Nicole Somersel. Built for CINF 201.</p></footer>
 </body>
 </html>

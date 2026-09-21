@@ -4,6 +4,7 @@
     <meta charset ="UTF-8">
     <meta name="viewport" content="width=device", inital-scale="1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="style.css"> <!--Decided to do this as it's probably much easier then how i usually do it which is just in html files in <head>-->
 
 </head>
 
@@ -12,65 +13,66 @@
 </style>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>  
-    <main>
-        <artlce>
-        <table>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Day
-                        </th>
-                        <th>
-                            Time
-                        </th>
-                        <th>
-                            Topic
-                        </th>
-                    </tr>
-                </thead>
-        </table>
-        <ul>
-            <li>CINF203 Intermeddiate Networking</li>
-            <li>CGDD109 Game Design Programming (Unity and C#)</li>
-            <li>CINF324 Info Security and protection</li>
-        </ul>
-        <img src="https://brightspace.albany.edu/d2l/le/2683888/discussions/posts/40065212/ViewAttachment?fileId=171684335" alt="A picture of me" width="300" height="300">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fillustration-anime-Digimon-cartoon-jungle-comics-Digimon-Tamers-screenshot-mangaka-comic-book-196522.jpg&f=1&nofb=1&ipt=e75f5b93a018329a37562e3f2ecd7638403caf4094083a115fcd0014cebaab5b" alt="Digimon pic" width="300" height="300">
-        <p>Short audio clip</p>
-        <audio controls>
-            <source src="https://example.com/audio.mp3" type="audio/mpeg">
-        </audio>
-        </artlce>
-    </main>
-
-    <h2>About Me</h2>
-    <h3>Major stuff</h3>
-    <p>Hello, I'm Nicole Somersel and Welcome to my About page.</p>
-    <p> I'm a Junior Informatics student at UAlbany and I have a fondness for technology.
-        I've got a lot of practice with things such as circuitry,coding, and basic netoworking stuff.
-        I'm hoping to go into the IT work force after gradution and hopefully get a job in helpdesk. 
-    </p>
-    <strong><h3>Non-Major stuff</h3></strong>
-    <p>
-        Some fun things about me that aren't related to my major are the fact that I'm a pretty big comic fan, 
-        in fact you can probably find me talking about Batman and Nightwing constantly.
-        I also play a lot of video games and I really enjoy Rhythm games and RPGS. 
-        I also Skateboard and practice playing the drums in my free time.
-
-        I'm also on the Eboard for the Game Design Club! I'm their Communications Director and you can find me managing the club instagram as well as taking photos and videos at events.
-    </p>
-    <h2>Education</h2>
-    <p>I started at UAlbany as a Freshman Electrical and Computer Engineering Student, working with FYE as a world Representative through the L-LC program, but once my Sophmore year started I became an Informatics Major working with FYE as a World Ambassador. Then, we come to current time where I am a Junior Informatics student working with FYE as a World Diplomat.</p>
-    <hr>
-    <h2>Why I'm taking CINF 201 </h2>
-    <p>Uh I like web development and wanted to get better at it. Course I could always just learn myself online but I felt like an in person class would be better. Also I needed this to graduate.</p>
-
+    <header>Nicole Somersel
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!--Start of content I lowkey don't write comements unless i'm confused on something or whatever-->
+    <div class="flex-main">
+        <main>
+            <div class="left-col"> <!--this host all left side content-->
+                <p>One of my favorite songs from Digimon: The Movie </p>
+                <audio controls>
+                    <source src="https://files.catbox.moe/wd02qb.ogg" type="audio/ogg">
+                    <source src="https://files.catbox.moe/43jmvf.mp3" type="audio/mpeg">
+                    Your browser doesn't support embedded audio.
+                    <a href="https://files.catbox.moe/43jmvf.mp3">Download the song :D</a> instead.
+                </audio>
+            </div>
+            <div class="content"> <!--this host all main center content-->
+                    </artlce>
+                    <h2>About Me</h2>
+                    <h3>Major stuff</h3>
+                    <p>Hello, I'm Nicole Somersel and Welcome to my About page.</p>
+                    <p> I'm a Junior Informatics student at UAlbany and I have a fondness for technology.
+                    I've got a lot of practice with things such as circuitry,coding, and basic netoworking stuff.
+                    I'm hoping to go into the IT work force after gradution and hopefully get a job in helpdesk. 
+                    </p>
+                    <b>Some of my favorite classes:</b>
+                    <ol>
+                        <li>CINF202: Intro to Data and Databases</li>
+                        <li>CINF202: Intro to Networking</li>
+                        <li>
+                            Current courses that I like
+                            <ul>
+                                <li>CINF203 Intermediate Networking</li>
+                            <li>CGDD109 Game Design Programming (Unity and C#)</li>
+                        </ul>
+                    </li>
+                    </ol>
+                    <aside id="non-major" class="asidebox"> <!-- hmm should i do grid and flex for this? maybe-->
+                    <strong><h3>Non-Major stuff</h3></strong>
+                    <p>
+                        Some fun things about me that aren't related to my major are the fact that I'm a pretty big comic fan, 
+                        in fact you can probably find me talking about Batman and Nightwing constantly. I also really like Digimon, that was like one of the first Animes I've watched (Tamers is my favorite season and I love )
+                        I also play a lot of video games and I really enjoy Rhythm games and RPGS. 
+                        I also Skateboard and practice playing the drums in my free time.
+                        I'm also on the Eboard for the Game Design Club! I'm their Communications Director and you can find me managing the club instagram as well as taking photos and videos at events.
+                    </p>
+                    </aside>
+            </div>
+        </main>
+        <div class="right-col"> <!--this host all right side content-->
+            <h2>Education</h2>
+            <p>I started at UAlbany as a Freshman Electrical and Computer Engineering Student, working with FYE as a world Representative through the L-LC program, but once my Sophmore year started I became an Informatics Major working with FYE as a World Ambassador. Then, we come to current time where I am a Junior Informatics student working with FYE as a World Diplomat.</p>
+            <hr>
+            <h2>Why I'm taking CINF 201 </h2>
+            <p>Uh I like web development and wanted to get better at it. Course I could always just learn myself online but I felt like an in person class would be better. Also I needed this to graduate but I've got a soft spot for web development and I have always wanted to create a comic website that archives comic history and allows for updates and news as wel, kinda like the old school blogs or forums.</p>
+        </div>
+    </div>
     <footer><p>&copy; 2026 Nicole Somersel. Built for CINF 201.</p></footer>
 </body>
 

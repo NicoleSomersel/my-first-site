@@ -1,0 +1,30 @@
+command line stuff(which honestly im probably rarely going to use tbh)
+pwd - print current colder im in
+mkdir (Filename) - creates new folder with that name (used this in class)
+ls/dir - lists content in the folder im in (I do use this on linux)
+
+
+Structure at start of every new html file
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body> 
+</html>
+
+To comment stuff <!---->
+
+only need these if i use them in page
+<fieldset> then <legend> forms
+
+audio and video
+<audio controls> <source src=""></audio>
+<video controls><source src=""></video>
+
+css stuff for css files
+for css files it's just straight css no <head> or any of that
