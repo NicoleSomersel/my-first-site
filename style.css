@@ -1,25 +1,90 @@
+
+/*tank you Neocities, Tumblr, and my html skills from
+like middle school for reminding me that
+:root exists and that I can lowkey just do this
+had to brush up on my skills by lookin at my old websites and code lol*/
+/*also shoutout to digitalocean for pratical examples*/
+:root{
+    --font-heading: Tahoma, Arial, Helvetica;
+    --font-body: Georgia, "Times New Roman", serif;
+
+    --font-size: 15px;
+    --font-heading1: 40px;
+    --font-heading2: 35px;
+    --font-heading3: 25px;
+
+    --line-height: 1.6;
+
+    --surface: #19182F;
+    --text: #ffffff;
+    --accent: #70B8FF;
+}
+
+/*The asterisk (*) selector in CSS, known as the 
+universal selector, is used to target and apply 
+styles to all elements on a webpage, regardless 
+of their type or hierarchy. It's especially useful 
+for global styling, such as resetting margins or 
+applying uniform properties across the document. - GeeksforGeeks site*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: var(--font-heading);
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 10px;
+    text-align: center;
+}
 body{
-    font-family: Tahoma, Arial,  Helvetica;
-    background-color: #1a1a1a;
-    color: #ffffff;
+    font-family: var(--font-body);
+    background-color: var(--surface);
+    color: var(--text);
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+}
+h1{
+    font-size: var(--font-heading1);
+    font-family: var(--font-heading);
+}
+h2{
+    font-size: var(--font-heading2);
+    font-family: var(--font-heading);
+}
+h3{
+    font-size: var(--font-heading3);
+    font-family: var(--font-heading);
+}
+p{
+    max-width: 60ch;
 }
 nav{
-    background-color: #19182F;
-    border-bottom: 4px solid #660000;
+    background-color: var(--surface);
+    border-bottom: 4px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     text-align: center;
     list-style: none;
 }
 nav a { 
-    color: #ffffff;
+    color: var(--text);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
     font-size: 12px;
+    text-decoration: underline;
+}
+nav a:hover { 
+    color: var(--accent);
+    text-decoration: underline;
 }
 footer{
-    background-color: rgba(4, 13, 21, 0.5);
-    color: #ffffff;
+    background-color: var(--surface);
+    color: var(--text);
     font-size: 16px;
     margin-bottom: 20px;
     padding: 15px;
@@ -27,19 +92,58 @@ footer{
 }
 .flex-main{
     margin: 25px auto;
+    padding: 15px;
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    flex-direction: column;
     max-width: 1200px;
 }
 .content{
-    border: 3px ridge #0020C2;
+    border: 3px ridge var(--accent);
     flex: 1;
     padding: 15px;
 }
 .left-aside,.right-aside{
-    border: 3px ridge #0020C2;
-    width: 280px;
+    border: 3px ridge var(--accent);
+    width: 100%;
     padding: 15px;
-    overflow: auto;
+    overflow-wrap: break-word;
+}
+#logo{
+    max-width: 1200px;
+    height: auto;
+}
+#contentimg{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+@media (min-width: 768px){
+    .flex-main{
+        font-size: 17px;
+        }
+    h1{
+        font-size: 30px;
+        }
+    .h2{
+        font-size: 25px;
+        }
+    .h3{
+        font-size: 19px;
+        }
+}
+@media (min-width: 1024px){
+    .flex-main{
+        font-size: 20px;
+        }
+    h1{
+        font-size: 40px;
+        }
+    .h2{
+        font-size: 35px;
+        }
+    .h3{
+        font-size: 29px;
+        }
 }

@@ -1,0 +1,10 @@
+.layout{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas:
+        "head head head"
+        "nav main aside"
+        "foot foot foot";
+}

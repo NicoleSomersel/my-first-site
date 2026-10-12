@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
     <meta charset ="UTF-8">
-    <meta name="viewport" content="width=device", inital-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css"> <!--Decided to do this as it's probably much easier then how i usually do it which is just in html files in <head>-->
 
@@ -13,18 +13,20 @@
 </style>
 
 <body>
-    <header>Nicole Somersel
+    <header id="logo" class="header">
+        <img src="images/nwlogo.jpg" alt="" class="logo" width="100" height="100">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <h1>About Me</h1>
     <!--Start of content I lowkey don't write comements unless i'm confused on something or whatever-->
     <div class="flex-main">
         <main>
             <div class="left-col"> <!--this host all left side content-->
-                <p>One of my favorite songs from Digimon: The Movie </p>
+                <h2>One of my favorite songs from Digimon: The Movie </h2>
                 <audio controls>
                     <source src="https://files.catbox.moe/wd02qb.ogg" type="audio/ogg">
                     <source src="https://files.catbox.moe/43jmvf.mp3" type="audio/mpeg">
@@ -49,9 +51,9 @@
                             Current courses that I like
                             <ul>
                                 <li>CINF203 Intermediate Networking</li>
-                            <li>CGDD109 Game Design Programming (Unity and C#)</li>
-                        </ul>
-                    </li>
+                                <li>CGDD109 Game Design Programming (Unity and C#)</li>
+                            </ul>
+                        </li>
                     </ol>
                     <aside id="non-major" class="asidebox"> <!-- hmm should i do grid and flex for this? maybe-->
                     <strong><h3>Non-Major stuff</h3></strong>
@@ -64,11 +66,9 @@
                     </p>
                     </aside>
                 <table>
-                    <caption>When I'm usually free to meet on campus</caption>
                     <thead>
                         <tr>
-                        <!-- colspan="3" makes this one header cell visually stretch
-                            across all three columns below it. -->
+
                         <th colspan="3">Favorite Characters from:</th>
                         </tr>
                         <tr>
@@ -109,10 +109,10 @@
             </div>
         </main>
         <div class="right-col"> <!--this host all right side content-->
-            <h2>Education</h2>
+            <h3>Education</h3>
             <p>I started at UAlbany as a Freshman Electrical and Computer Engineering Student, working with FYE as a world Representative through the L-LC program, but once my Sophmore year started I became an Informatics Major working with FYE as a World Ambassador. Then, we come to current time where I am a Junior Informatics student working with FYE as a World Diplomat.</p>
             <hr>
-            <h2>Why I'm taking CINF 201 </h2>
+            <h3>Why I'm taking CINF 201 </h3>
             <p>Uh I like web development and wanted to get better at it. Course I could always just learn myself online but I felt like an in person class would be better. Also I needed this to graduate but I've got a soft spot for web development and I have always wanted to create a comic website that archives comic history and allows for updates and news as wel, kinda like the old school blogs or forums.</p>
         </div>
     </div>
